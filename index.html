@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Real Estate Management System</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f5f7fa;
+            color: #222;
+        }
+
+        header {
+            background: #1e3a5f;
+            color: white;
+            padding: 20px 60px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 25px;
+            font-weight: bold;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 25px;
+            font-size: 16px;
+        }
+
+        nav a:hover {
+            color: #ffd166;
+        }
+
+        .hero {
+            min-height: 500px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: linear-gradient(
+                rgba(0, 0, 0, 0.55),
+                rgba(0, 0, 0, 0.55)
+            ),
+            url("assets/images/slider/slide-bg/10107976.jpg");
+
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 40px 20px;
+        }
+
+        .hero-content {
+            max-width: 800px;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 20px;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 14px 30px;
+            background: #ffd166;
+            color: #222;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            margin: 5px;
+        }
+
+        .btn:hover {
+            background: #f4b942;
+        }
+
+        .features {
+            padding: 60px 40px;
+            text-align: center;
+        }
+
+        .features h2 {
+            font-size: 32px;
+            color: #1e3a5f;
+            margin-bottom: 40px;
+        }
+
+        .feature-container {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+        }
+
+        .feature {
+            width: 280px;
+            background: white;
+            padding: 30px 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .feature h3 {
+            color: #1e3a5f;
+            margin-bottom: 15px;
+        }
+
+        .feature p {
+            line-height: 1.6;
+            color: #555;
+        }
+
+        footer {
+            background: #1e3a5f;
+            color: white;
+            text-align: center;
+            padding: 25px;
+            margin-top: 20px;
+        }
+
+        @media (max-width: 768px) {
+            header {
+                padding: 20px;
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav a {
+                margin: 0 8px;
+            }
+
+            .hero h1 {
+                font-size: 35px;
+            }
+
+            .hero p {
+                font-size: 17px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            REMS
+        </div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="#features">Features</a>
+            <a href="#about">About</a>
+            <a href="login.php">Login</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+
+            <h1>Real Estate Management System</h1>
+
+            <p>
+                Manage properties, clients and agents easily
+                with our Real Estate Management System.
+            </p>
+
+            <a href="login.php" class="btn">
+                Login
+            </a>
+
+            <a href="#features" class="btn">
+                Explore
+            </a>
+
+        </div>
+    </section>
+
+    <section class="features" id="features">
+
+        <h2>Our Features</h2>
+
+        <div class="feature-container">
+
+            <div class="feature">
+                <h3>Property Management</h3>
+                <p>
+                    Create, edit and manage property listings
+                    with property details, prices and features.
+                </p>
+            </div>
+
+            <div class="feature">
+                <h3>Client Management</h3>
+                <p>
+                    Manage client information and help clients
+                    search for suitable properties.
+                </p>
+            </div>
+
+            <div class="feature">
+                <h3>Agent Management</h3>
+                <p>
+                    Manage agents and their property listings
+                    from the system.
+                </p>
+            </div>
+
+            <div class="feature">
+                <h3>Property Search</h3>
+                <p>
+                    Search properties based on location,
+                    price and other features.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="features" id="about">
+
+        <h2>About REMS</h2>
+
+        <p style="max-width: 800px; margin: auto; line-height: 1.8;">
+            The Real Estate Management System is a web-based
+            application designed to manage properties, clients
+            and agents for a real estate agency.
+        </p>
+
+    </section>
+
+    <footer>
+
+        <p>
+            © 2026 Real Estate Management System
+        </p>
+
+    </footer>
+
+</body>
+</html>
